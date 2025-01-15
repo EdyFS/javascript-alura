@@ -13,13 +13,17 @@ document.querySelector('.tecla_pom').onclick = tocaSomPom;
 function tocaSom(idElementoAudio){
     document.querySelector(idElementoAudio).play();
 }
-let contador = 0;
+
 const listaDeTeclas = document.querySelectorAll('.tecla');
+let contador = 0;
 
 while(contador < listaDeTeclas.length){
-    listaDeTeclas[contador].onclick = tocaSomPom;
-listaDeTeclas[1].onclick = tocaSomClap;
+
+    const instrumento = listaDeTeclas[contador].classList[1];
+    console.log(instrumento);
+    listaDeTeclas[contador].onclick = function (){
+        tocaSom('#som_tecla_pom');
+    }
     contador = contador + 1;
-    console.log(listaDeTeclas);
     console.log(contador);
 }
