@@ -23,9 +23,23 @@ botao.onclick = function (){
     mostrador.innerHTML = contador;
 }
 
+<button class="tecla tecla_pom">Pom</button>
+let contador = 0;
+
+function incrementarContador() {
+  contador = contador + 1;
+  console.log("Contador: " + contador);
+}
+
+const tecla = document.querySelector(".tecla_pom")
+tecla.onclick = incrementarContador;
+
 //2
 let lista = document.querySelectorAll('.button');
 console.log(lista);
+
+const listaDeTeclas = document.querySelectorAll('.tecla');
+console.log(listaDeTeclas);
 
 //3
 function tocaSom(idElementoAudio){
@@ -55,6 +69,16 @@ while(contador < listaDeTeclas.length){
    // console.log(contador);
 }
 
+let contador = 0;
+
+const listaDeTeclas = document.querySelectorAll('.tecla')
+
+function incrementarContador() {
+  contador = contador + 1;
+  console.log("Contador: " + contador);
+}
+
+listaDeTeclas[3].onclick = incrementarContador;
 
 //4
 function tocaSom(idElementoAudio){
@@ -83,6 +107,22 @@ while(contador < listaDeTeclas.length){
    // console.log(contador);
 }
 
+let contador = 0;
+
+const listaDeTeclas = document.querySelectorAll('.tecla');
+
+function incrementarContador() {
+  contador = contador + 1;
+  console.log("Contador: " + contador);
+}
+
+let i = 0;
+
+while (i < listaDeTeclas.length) {
+  listaDeTeclas[i].onclick = incrementarContador;
+  i++;
+}
+
 //5
 function tocaSom(idElementoAudio){
     document.querySelector(idElementoAudio).play();
@@ -108,4 +148,17 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++){
     contador = contador + 1;
     
    // console.log(contador);
+}
+
+let contador = 0;
+
+const listaDeTeclas = document.querySelectorAll('.tecla');
+
+function incrementarContador() {
+  contador = contador + 1;
+  console.log("Contador: " + contador);
+}
+
+for (let i = 0; i < listaDeTeclas.length; i++) {
+  listaDeTeclas[i].onclick = incrementarContador;
 }

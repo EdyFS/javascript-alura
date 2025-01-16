@@ -25,7 +25,7 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++){
     const idAudio = `#som_${instrumento}`;//template string
     //console.log(instrumento);
     listaDeTeclas[contador].onclick = function (){
-        tocaSom(idAudio);    
+        tocaSom(idAudio);     
     }
     
     //contador = contador + 1;
