@@ -162,3 +162,39 @@ function incrementarContador() {
 for (let i = 0; i < listaDeTeclas.length; i++) {
   listaDeTeclas[i].onclick = incrementarContador;
 }
+
+//Aula 5
+/*
+//Alura fone
+
+let listaTecla = document.querySelectorAll('input[type=button]');
+let indice = 0;
+
+
+while (indice < listaTecla.length){
+  let tecla = listaTecla[indice];
+  tecla.onkeydown = function (){
+    tecla.classList.add('ativa');   
+  }
+  tecla.onkeyup = function (){
+    tecla.classList.remove('ativa');
+  }
+  indice = indice + 1;
+}
+
+//ResoluçãoAlura
+const listaDeTeclas = document.querySelectorAll('input[type=button]');
+
+for (let indice = 0; indice < listaDeTeclas.length; indice++) {
+  const tecla = listaDeTeclas[indice];
+
+  tecla.onkeydown = function (evento) {
+    if(evento.code === "Enter" || evento.code === "Space") {
+    tecla.classList.add('ativa');
+    }
+  }
+  tecla.onkeyup = function () {
+    tecla.classList.remove('ativa');
+  }
+}
+  */
