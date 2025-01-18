@@ -198,3 +198,20 @@ for (let indice = 0; indice < listaDeTeclas.length; indice++) {
   }
 }
   */
+
+//Exercícios
+/*
+const listaTecla = document.querySelectorAll('input[type=button]');
+for (let i = 0; i <listaTecla.length; i++){
+  const tecla = listaTecla[i];
+  tecla.onclick = function(){
+    if (tecla.classList.contains('ativa')){
+      tecla.classList.remove('ativa');
+    }
+    else{
+      tecla.classList.add('ativa');
+    }
+
+  }
+}
+  */

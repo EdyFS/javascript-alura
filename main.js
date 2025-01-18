@@ -10,8 +10,16 @@ function tocaSomClap(){
 document.querySelector('.tecla_pom').onclick = tocaSomPom;
 */
 
-function tocaSom(idElementoAudio){
-    document.querySelector(idElementoAudio).play();
+function tocaSom(seletorAudio){
+    const elemento =document.querySelector(seletorAudio);
+
+     if(elemento != null && elemento.localName === 'audio'){ //pederia ser usado elemento && elemento.localName === 'audio',pois já entende que o elemento é diferente de nulo
+        elemento.play();
+        
+     }
+     else{
+        alert('Elemento não encontrado ou seletor inválido')
+     }
 }
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
